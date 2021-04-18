@@ -1,0 +1,304 @@
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #e72840;
+    --secondary-color: #ffffff; 
+    --third-color: #dfe180; 
+    --fourth-color: #e4f3f6;
+    --fifth-color: #76c4d1;
+    --base-color: #d5eade;
+
+}
+
+@font-face {
+    font-family: "Raleway-bold";
+    src: url(./fonts/fonts/raleway/raleway-bold-webfont.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway-regular" ;
+    src: url(./fonts/fonts/raleway/raleway-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: "Raleway-light";
+    src: url(./fonts/fonts/raleway/raleway-thin-webfont.ttf);
+}
+
+body {
+    background-color: var(--base-color);
+}
+
+b {
+    font-family: "Raleway-bold";
+    size: 1rem;
+}
+
+#insider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around center;
+    background-color: var(--fifth-color);
+    margin: 2rem;
+    position: static;
+        
+}
+
+h1 {
+    color: var(--secondary-color) ;
+    margin-top: 0.1rem;
+}
+
+
+.whiteColor {
+    color: var(--secondary-color);
+}
+
+hr {
+    border: 0 none var(--primary-color);
+    clear: both;
+    display: block;
+    border-top: 1px solid var(--primary-color);
+    height: 1px;
+    margin: 5px 0;    
+}
+
+#block-one {
+    margin: 4rem 4rem 1rem 4rem;
+    width: 52%;
+    float: left;
+}
+
+#block-one h1 {
+    font-family: "Raleway-bold";
+    font-size: 2.5rem;
+    
+}
+
+#block-one p {
+    font-family: "Raleway-light";
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+}
+
+#talos {
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Raleway-light";
+    font-size: 1rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.7rem;
+    padding-left: 0.8rem;
+    padding-right: 3rem;
+    width : 35%;
+}
+
+#dark-overlay {
+    background: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    height: 297%;
+    right: 0;
+    margin-top:-5% ;
+    
+  
+}
+    
+#yellowFloat {
+    position: absolute;
+    display: flex-block ;
+    margin-top: 5%;
+    margin-right: 3rem;
+    width: 30%;
+    height: 80%;
+    right:0%;
+    top: 4%;
+    background-color:var(--third-color) ;
+    text-align: left ;
+    padding: 3rem 3rem 3rem 3rem;
+    list-style-type: none;
+    z-index: 3;
+    line-height: 1.8rem;
+    font-family: "Raleway-light";
+    font-size: 1rem;
+} 
+
+.listTitle{
+    font-family: "Raleway-light";
+    margin-left: 10%;
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+
+}
+
+#the-road {
+    background: var(--fourth-color);
+    width: 50%;
+    height: 15%;
+    margin: 1rem 1rem 1rem 0rem ;
+    padding: 3% 2% 4% 4%;
+}
+
+
+#the-road p {
+    font-family: "Raleway-regular";
+}
+#the-road h2 {
+    font-family: "Raleway-light";
+    line-height: 3rem;
+}
+
+#about {
+    margin: 3rem 1rem 2rem 3rem;
+    width: 50%;
+    height: 50%;
+    padding: 5rem;
+    display: block;
+    float: left;
+    font-family: "Raleway-light";
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+#pinkFloat {
+    width: 40%;
+    height: 70%;
+    margin-top: 4rem ;
+    margin-right: 4rem ;
+    padding: 4rem 4rem;
+    background: var(--primary-color);
+    float: right;
+    z-index: 2;
+    position: relative;
+    font-family: "Raleway-light";    
+    color: white;
+}
+#pinkFloat h2 {
+    line-height: 3rem;
+}
+#smallSquare {
+    background:var(--fourth-color);
+    width: 30%;
+    height:40%;
+    padding: 4rem;
+    top: 6rem;
+    margin: 4rem 0rem 4rem 4rem;
+    font-family: "Raleway-regular";
+
+
+}
+
+#bigSquare {
+    background:var(--fourth-color);
+    padding: 3rem ;
+    width: 60%;
+    height: 70%;
+    z-index:2;
+    font-family: "Raleway-regular";
+
+   
+}
+
+#last-foot {
+    background-color: var(--third-color);
+    font-size: 2rem;
+    padding: 1rem 24rem 1rem 1rem;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    width :50%;
+    line-height: 2.5rem;
+    font-family: "Raleway-light";
+    color: #808080;
+
+    
+}
+
+@media screen and (max-width: 480px){
+    
+  
+
+     
+#insider {
+  
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+   
+        
+}
+
+#talos {
+    
+     width: 95%;
+     line-height: 3rem;
+        
+}
+
+#block-one {
+    width: 100%;
+    padding: 0rem;
+    margin: 1rem;
+}
+
+#dark-overlay {
+    visibility: hidden;
+}
+
+#yellowFloat {
+    align-self: center;
+    position: relative;
+    width: 100%;
+
+  
+
+}
+
+#pinkFloat {
+    display: block;         
+    width: 100%;
+    margin: 0rem 1rem;
+}
+
+#the-road {
+    position: relative;
+    align-self: center;
+    display: block;
+    width: 100%;
+}
+
+#about {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#smallSquare {
+    width: 100%;
+    margin: 0rem 1rem;
+    padding-bottom:1rem ;
+}
+
+#bigSquare {
+    width: 100%;
+    margin: 0rem 1rem;
+}
+
+#last-foot {
+    padding: 1rem;
+    width: 65%;
+    margin: 1rem;
+    margin-top: 0rem;
+}
+}

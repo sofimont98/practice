@@ -32,14 +32,15 @@ body {
     background-color: var(--base-color);
 }
 
+h2 {
+    font-family: "Raleway-light";
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 p::first-letter {
     font-family: "Raleway-bold";
     
-}
-
-.bolder {
-    font-weight: 900;
-
 }
 
 b {
@@ -54,8 +55,7 @@ b {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 2rem;
-    position: static;
-        
+    position: static;    
 }
 
 h1 {
@@ -64,7 +64,7 @@ h1 {
 }
 
 
-.whiteColor {
+.white-color {
     color: var(--secondary-color);
 }
 
@@ -81,8 +81,7 @@ h1 {
 
 .block-one h1 {
     font-family: "Raleway-bold";
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem;  
 }
 
 .block-one p {
@@ -97,7 +96,7 @@ h1 {
     color: var(--secondary-color);
     font-family: "Raleway-light";
     font-size: 1rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
     line-height: 2.5rem;
     padding-left: 0.8rem;
     padding-right: 3rem;
@@ -106,7 +105,7 @@ h1 {
 
 .dark-overlay {
     background: rgb(0, 0, 0, 0.5);
-    height: 297%;
+    height: 240%;
     margin-top:-5% ;
     right: 0;
     position: absolute;
@@ -114,7 +113,7 @@ h1 {
     width: 30%;  
 }
     
-.yellowFloat {
+.yellow-float {
     background-color:var(--third-color) ;
     display: flex-block ;
     font-family: "Raleway-light";
@@ -133,10 +132,14 @@ h1 {
     z-index: 3;
 } 
 
-.listTitle{
+.yellow-float li:nth-child(2n+3) {
+    font-family: "Raleway-bold";
+
+}
+
+.list-title{
     font-family: "Raleway-light";
     font-size: 2rem;
-    margin-left: 10%;
 }
 
 li {
@@ -158,7 +161,8 @@ li {
 }
 .the-road h2 {
     font-family: "Raleway-light";
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 4rem;
 }
 
 .about {
@@ -171,7 +175,7 @@ li {
     padding: 5rem;
 }
 
-.pinkFloat {
+.pink-float {
     color: white;
     background: var(--primary-color);
     font-family: "Raleway-light";    
@@ -183,10 +187,12 @@ li {
     width: 40%;
     z-index: 2;
 }
-.pinkFloat h2 {
+
+.pink-float h2 {
     line-height: 3rem;
 }
-.smallSquare {
+
+.small-square {
     background:var(--fourth-color);
     font-family: "Raleway-regular";
     height:40%;
@@ -196,7 +202,7 @@ li {
     width: 30%;
 }
 
-.bigSquare {
+.big-square {
     background:var(--fourth-color);
     font-family: "Raleway-regular";
     height: 70%;
@@ -217,7 +223,7 @@ li {
     width :50%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     
   
 
@@ -245,7 +251,7 @@ li {
     visibility: hidden;
 }
 
-.yellowFloat {
+.yellow-float {
     align-self: center;
     position: relative;
     width: 100%;
@@ -254,7 +260,7 @@ li {
 
 }
 
-.pinkFloat {
+.pink-float {
     display: block;         
     margin: 0rem 1rem;
     width: 100%;
@@ -273,13 +279,13 @@ li {
     width: 100%;
 }
 
-.smallSquare {
+.small-square {
     margin: 0rem 1rem;
     padding-bottom:1rem ;
     width: 100%;
 }
 
-.bigSquare {
+.big-square {
     margin: 0rem 1rem;
     width: 100%;
 }
